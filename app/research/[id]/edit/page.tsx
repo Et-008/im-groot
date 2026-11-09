@@ -18,6 +18,7 @@ import Markdown from '@/components/functional/MarkDown'
 import ResearchNotesSheet from "@/components/functional/ResearchNotesSheet"
 import PrerequisiteKnowledge from "@/components/functional/PrerequisiteKnowledge"
 import ActionRequirements from "@/components/functional/ActionRequirements"
+import AdSenseSlot from "@/components/functional/AdSenseSlot"
 
 let timer: ReturnType<typeof setTimeout> | null = null
 
@@ -553,8 +554,8 @@ export default function ResearchBoard({ params }: { params: Promise<{ id: string
                 aria-label="Advertisement"
                 className="absolute left-[calc(50%-44rem)] top-8 hidden w-40 2xl:block"
             >
-                <p className="mb-2 text-center text-xs uppercase tracking-wide text-brand-muted">Advertisement</p>
-                <div aria-hidden="true" className="h-150 rounded-lg border border-dashed border-brand-line bg-brand-paper/50" />
+                <p className="mb-2 text-center text-xs uppercase tracking-wide text-brand-muted">Ad</p>
+                <AdSenseSlot />
             </aside>
             <div className="mx-auto max-w-5xl px-5 pb-12 pt-8 sm:px-8 sm:pt-12 lg:px-12">
                 <nav aria-label="Breadcrumb" className="mb-7 flex items-center gap-2 text-sm text-brand-muted">
