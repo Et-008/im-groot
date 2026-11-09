@@ -27,6 +27,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-sans", inter.variable)}
     >
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7733239272768551"
+          crossOrigin="anonymous"></script>
+      </head>
       <body className="min-h-full flex flex-col">
         <Navbar />
         {children}
